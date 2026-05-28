@@ -3,196 +3,429 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kay Beauty Canada Strategy</title>
+  <title>Kay Beauty Canada Expansion Strategy</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     html { scroll-behavior: smooth; }
     body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .glass { background: rgba(255,255,255,0.10); backdrop-filter: blur(14px); }
-    .gradient-bg {
+    .hero {
       background:
-        radial-gradient(circle at 10% 20%, rgba(244,63,94,.45), transparent 30%),
-        radial-gradient(circle at 90% 20%, rgba(217,70,239,.35), transparent 35%),
-        #020617;
+        radial-gradient(circle at 12% 20%, rgba(244,63,94,.42), transparent 30%),
+        radial-gradient(circle at 86% 18%, rgba(217,70,239,.32), transparent 34%),
+        linear-gradient(135deg, #020617 0%, #111827 55%, #3b0a2a 100%);
     }
+    .card { border: 1px solid #e2e8f0; background: white; border-radius: 1.25rem; box-shadow: 0 1px 2px rgba(15,23,42,.06); }
+    .source-link { color:#be123c; text-decoration: underline; text-underline-offset: 3px; }
   </style>
 </head>
+
 <body class="bg-slate-50 text-slate-900">
   <nav class="sticky top-0 z-50 bg-slate-950/95 border-b border-white/10">
     <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#overview" class="text-white font-semibold">✨ Kay Beauty Canada Strategy</a>
+      <a href="#top" class="text-white font-semibold tracking-tight">Kay Beauty Canada Strategy</a>
       <div class="hidden md:flex gap-5 text-sm">
-        <a href="#overview" class="text-slate-300 hover:text-white">Overview</a>
-        <a href="#why" class="text-slate-300 hover:text-white">Why Canada</a>
+        <a href="#recommendation" class="text-slate-300 hover:text-white">Recommendation</a>
+        <a href="#launch-market" class="text-slate-300 hover:text-white">Launch Market</a>
         <a href="#analysis" class="text-slate-300 hover:text-white">Analysis</a>
-        <a href="#strategy" class="text-slate-300 hover:text-white">Strategy</a>
-        <a href="#timeline" class="text-slate-300 hover:text-white">Timeline</a>
-        <a href="#sources" class="text-slate-300 hover:text-white">Sources</a>
+        <a href="#entry" class="text-slate-300 hover:text-white">Entry Mode</a>
+        <a href="#implementation" class="text-slate-300 hover:text-white">Implementation</a>
+        <a href="#references" class="text-slate-300 hover:text-white">References</a>
       </div>
     </div>
   </nav>
 
-  <section id="overview" class="gradient-bg text-white px-4 py-20 md:py-28">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-[1.1fr_.9fr] gap-10 items-center">
+  <header id="top" class="hero text-white px-4 py-20 md:py-28">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-[1.05fr_.95fr] gap-10 items-center">
       <div>
         <div class="flex flex-wrap gap-2 mb-5">
-          <span class="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs">Final Project Proposal</span>
-          <span class="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs">India → Canada</span>
-          <span class="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs">BC Beachhead Market</span>
+          <span class="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs">Final Strategy Proposal</span>
+          <span class="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs">Home Country: India</span>
+          <span class="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs">New Country: Canada</span>
         </div>
-        <h1 class="text-4xl md:text-6xl font-black leading-tight tracking-tight">Kay Beauty’s Expansion into Canada</h1>
+
+        <h1 class="text-4xl md:text-6xl font-black leading-tight tracking-tight">
+          Kay Beauty’s Expansion into Canada
+        </h1>
+
         <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-200">
-          A phased, digital-first global growth strategy using British Columbia as the launch market for an Indian makeup brand built around inclusivity, performance, and South Asian beauty expertise.
+          A phased international growth strategy for Kay Beauty, using Surrey and Metro Vancouver as the first Canadian launch market before scaling nationally.
         </p>
+
         <div class="mt-8 flex flex-wrap gap-3">
-          <a href="#strategy" class="rounded-full bg-rose-500 px-5 py-3 text-sm font-semibold text-white hover:bg-rose-400">View Recommendation →</a>
-          <a href="#analysis" class="rounded-full border border-white/25 px-5 py-3 text-sm font-semibold text-white hover:bg-white/10">See Analysis ↓</a>
+          <a href="#recommendation" class="rounded-full bg-rose-500 px-5 py-3 text-sm font-semibold text-white hover:bg-rose-400">View Recommendation</a>
+          <a href="#analysis" class="rounded-full border border-white/25 px-5 py-3 text-sm font-semibold text-white hover:bg-white/10">View Analysis</a>
         </div>
       </div>
 
-      <div class="rounded-3xl border border-white/10 glass p-6 shadow-2xl">
-        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-rose-200">Core Recommendation</p>
+      <div class="rounded-3xl border border-white/10 bg-white/10 p-6 shadow-2xl backdrop-blur">
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-rose-200">Executive Answer</p>
         <p class="mt-4 text-2xl font-bold leading-snug">
-          Enter Canada through e-commerce and BC-based influencer marketing first, then expand into selective retail after demand is proven.
+          Kay Beauty should enter Canada through a digital-first launch in Surrey and Metro Vancouver, then expand into selective retail once demand, compliance, and product-market fit are proven.
         </p>
+
         <div class="mt-6 grid sm:grid-cols-2 gap-3">
-          <div class="rounded-2xl bg-white/10 p-4"><p class="text-xs uppercase text-slate-300">Home country</p><p class="font-semibold mt-1">India</p></div>
-          <div class="rounded-2xl bg-white/10 p-4"><p class="text-xs uppercase text-slate-300">New country</p><p class="font-semibold mt-1">Canada</p></div>
-          <div class="rounded-2xl bg-white/10 p-4"><p class="text-xs uppercase text-slate-300">Beachhead</p><p class="font-semibold mt-1">British Columbia</p></div>
-          <div class="rounded-2xl bg-white/10 p-4"><p class="text-xs uppercase text-slate-300">Entry approach</p><p class="font-semibold mt-1">Digital-first + phased retail</p></div>
+          <div class="rounded-2xl bg-white/10 p-4"><p class="text-xs uppercase text-slate-300">Brand</p><p class="font-semibold mt-1">Kay Beauty</p></div>
+          <div class="rounded-2xl bg-white/10 p-4"><p class="text-xs uppercase text-slate-300">Parent strength</p><p class="font-semibold mt-1">Nykaa partnership</p></div>
+          <div class="rounded-2xl bg-white/10 p-4"><p class="text-xs uppercase text-slate-300">First market</p><p class="font-semibold mt-1">Surrey + Metro Vancouver</p></div>
+          <div class="rounded-2xl bg-white/10 p-4"><p class="text-xs uppercase text-slate-300">Entry mode</p><p class="font-semibold mt-1">E-commerce + local partner</p></div>
         </div>
       </div>
     </div>
-  </section>
+  </header>
 
-  <section id="why" class="px-4 py-16 md:py-20">
-    <div class="max-w-3xl mx-auto text-center mb-8">
-      <p class="mb-2 text-sm font-semibold uppercase tracking-[.2em] text-rose-600">Market Logic</p>
-      <h2 class="text-3xl md:text-4xl font-bold">Why Canada, and why BC first?</h2>
-      <p class="mt-4 text-slate-600 leading-7">Canada gives Kay Beauty a stable, multicultural beauty market. British Columbia provides a focused first launch province before national expansion.</p>
-    </div>
-    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-5">
-      <div class="rounded-2xl bg-white p-5 shadow-sm border"><h3 class="text-xl font-bold">📈 Growing beauty market</h3><p class="mt-3 text-sm leading-6 text-slate-600">Canada’s cosmetics market is large enough to support entry, but competitive enough that Kay Beauty needs a focused launch.</p></div>
-      <div class="rounded-2xl bg-white p-5 shadow-sm border"><h3 class="text-xl font-bold">👥 Multicultural fit</h3><p class="mt-3 text-sm leading-6 text-slate-600">Kay Beauty’s shade-inclusive and South Asian beauty expertise can connect with diaspora consumers and broader Canadian shoppers.</p></div>
-      <div class="rounded-2xl bg-white p-5 shadow-sm border"><h3 class="text-xl font-bold">🛡 Lower-risk launch</h3><p class="mt-3 text-sm leading-6 text-slate-600">A BC-first launch lets Kay Beauty test demand, pricing, compliance, and reviews before wider retail expansion.</p></div>
-    </div>
-  </section>
+  <main>
+    <section id="recommendation" class="px-4 py-16 md:py-20">
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <p class="text-sm font-semibold uppercase tracking-[.2em] text-rose-600">SCQA Logic</p>
+        <h2 class="mt-2 text-3xl md:text-4xl font-bold">Start with the answer, then prove it</h2>
+        <p class="mt-4 text-slate-600 leading-7">
+          The recommendation follows the Pyramid Principle: lead with the decision, then support it with evidence.
+        </p>
+      </div>
 
-  <section id="analysis" class="bg-white px-4 py-16 md:py-20">
-    <div class="max-w-3xl mx-auto text-center mb-8">
-      <p class="mb-2 text-sm font-semibold uppercase tracking-[.2em] text-rose-600">Professor Frameworks</p>
-      <h2 class="text-3xl md:text-4xl font-bold">Analysis that supports the recommendation</h2>
-      <p class="mt-4 text-slate-600 leading-7">Each framework is used to make a decision, not just to define concepts.</p>
-    </div>
+      <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-5">
+        <div class="card p-5">
+          <p class="text-sm font-semibold text-rose-600">Situation</p>
+          <h3 class="mt-2 text-xl font-bold">Kay Beauty is ready to grow</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-600">Kay Beauty has grown in India and has already tested international expansion in the UAE and UK.</p>
+        </div>
+        <div class="card p-5">
+          <p class="text-sm font-semibold text-rose-600">Complication</p>
+          <h3 class="mt-2 text-xl font-bold">Canada is attractive but crowded</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-600">The Canadian beauty market has strong competition, high buyer choice, and formal cosmetic compliance requirements.</p>
+        </div>
+        <div class="card p-5">
+          <p class="text-sm font-semibold text-rose-600">Question</p>
+          <h3 class="mt-2 text-xl font-bold">How should Kay Beauty enter?</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-600">The key decision is whether Kay Beauty should enter Canada through heavy retail investment or a lower-risk phased model.</p>
+        </div>
+        <div class="card p-5 border-rose-200 bg-rose-50">
+          <p class="text-sm font-semibold text-rose-700">Answer</p>
+          <h3 class="mt-2 text-xl font-bold">Use a phased entry strategy</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-700">Launch digitally in Surrey/Metro Vancouver first, validate demand, then expand into selective retail partnerships.</p>
+        </div>
+      </div>
+    </section>
 
-    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-5">
-      <div class="rounded-2xl bg-rose-50 p-6 shadow-sm border border-rose-100">
-        <h3 class="text-2xl font-bold mb-4">PESTLE Analysis</h3>
-        <div class="space-y-3 text-sm leading-6">
-          <p><b>Political:</b> Canada is stable and transparent. <b>Implication:</b> lower country risk for North American expansion.</p>
-          <p><b>Economic:</b> Canada’s cosmetics market is growing, but consumers are price-conscious. <b>Implication:</b> use affordable-premium pricing.</p>
-          <p><b>Social:</b> Canada is multicultural and South Asians are the largest racialized group. <b>Implication:</b> start with cultural relevance, but avoid being seen as only for South Asians.</p>
-          <p><b>Technological:</b> Beauty discovery is highly digital. <b>Implication:</b> launch through TikTok, Instagram, YouTube, and reviews first.</p>
-          <p><b>Legal:</b> Cosmetics must meet Health Canada notification and labelling requirements. <b>Implication:</b> use a Canadian compliance/import partner.</p>
-          <p><b>Environmental:</b> Consumers care about ingredients and ethical claims. <b>Implication:</b> only communicate verified claims.</p>
+    <section class="bg-white px-4 py-16 md:py-20">
+      <div class="max-w-7xl mx-auto grid lg:grid-cols-[.9fr_1.1fr] gap-8 items-start">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[.2em] text-rose-600">Brand Evidence</p>
+          <h2 class="mt-2 text-3xl md:text-4xl font-bold">Why Kay Beauty is credible enough for international expansion</h2>
+          <p class="mt-4 text-slate-600 leading-7">
+            Kay Beauty is not being chosen only because it is a celebrity brand. It has performance evidence, product range, brand positioning, and early global movement.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div class="card p-5">
+            <p class="text-3xl font-black text-rose-600">2019</p>
+            <p class="mt-2 font-semibold">Launch year</p>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Katrina Kaif partnered with Nykaa to launch Kay Beauty in India.</p>
+          </div>
+          <div class="card p-5">
+            <p class="text-3xl font-black text-rose-600">₹240 Cr</p>
+            <p class="mt-2 font-semibold">FY2025 GMV</p>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Vogue reported Kay Beauty reached ₹240 crore GMV for the year ended March 31, 2025.</p>
+          </div>
+          <div class="card p-5">
+            <p class="text-3xl font-black text-rose-600">2.5M+</p>
+            <p class="mt-2 font-semibold">Customers served</p>
+            <p class="mt-2 text-sm leading-6 text-slate-600">The brand has served more than 2.5 million customers to date.</p>
+          </div>
+          <div class="card p-5">
+            <p class="text-3xl font-black text-rose-600">UAE + UK</p>
+            <p class="mt-2 font-semibold">Early global proof</p>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Kay Beauty has launched in the UAE and entered the UK through Space NK.</p>
+          </div>
         </div>
       </div>
 
-      <div class="rounded-2xl bg-white p-6 shadow-sm border">
-        <h3 class="text-2xl font-bold mb-4">Porter Five Forces</h3>
-        <div class="space-y-3 text-sm leading-6">
-          <p><b>Industry rivalry: High.</b> Canada already has Fenty, Rare Beauty, MAC, e.l.f., NYX, Maybelline, Huda Beauty, and Sephora Collection.</p>
-          <p><b>Buyer power: High.</b> Customers can easily compare prices, shades, reviews, and switch brands.</p>
-          <p><b>Supplier/logistics power: Medium.</b> Importing from India creates shipping, inventory, currency, and compliance dependence.</p>
-          <p><b>Threat of new entrants: Medium-high.</b> Beauty brands can enter through e-commerce and influencer marketing.</p>
-          <p><b>Threat of substitutes: High.</b> Consumers can choose drugstore makeup, premium makeup, skincare-only routines, or local brands.</p>
-        </div>
-      </div>
-
-      <div class="rounded-2xl bg-white p-6 shadow-sm border lg:col-span-2">
-        <h3 class="text-2xl font-bold mb-4">Stakeholder Priorities</h3>
-        <div class="overflow-x-auto">
-          <table class="w-full text-sm text-left border rounded-xl overflow-hidden">
-            <thead class="bg-slate-100">
-              <tr><th class="p-3">Stakeholder</th><th class="p-3">Priority</th><th class="p-3">Power</th><th class="p-3">Management Action</th></tr>
-            </thead>
-            <tbody>
-              <tr class="border-t"><td class="p-3">Kay Beauty / Nykaa</td><td class="p-3">Profitable international growth</td><td class="p-3">High</td><td class="p-3">Use phased investment and clear KPIs</td></tr>
-              <tr class="border-t"><td class="p-3">Canadian customers</td><td class="p-3">Shade match, quality, price, trust</td><td class="p-3">High</td><td class="p-3">Use reviews, shade content, and product education</td></tr>
-              <tr class="border-t"><td class="p-3">South Asian diaspora</td><td class="p-3">Representation and authenticity</td><td class="p-3">High</td><td class="p-3">Use community-led launch events and creators</td></tr>
-              <tr class="border-t"><td class="p-3">Health Canada</td><td class="p-3">Safety and compliance</td><td class="p-3">High</td><td class="p-3">Complete product notification and labelling review</td></tr>
-              <tr class="border-t"><td class="p-3">Retail partners</td><td class="p-3">Sales potential and brand fit</td><td class="p-3">Medium</td><td class="p-3">Prove demand online before retail pitch</td></tr>
-              <tr class="border-t"><td class="p-3">Influencers</td><td class="p-3">Authentic partnership</td><td class="p-3">Medium</td><td class="p-3">Choose BC-based beauty creators</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="strategy" class="px-4 py-16 md:py-20">
-    <div class="max-w-3xl mx-auto text-center mb-8">
-      <p class="mb-2 text-sm font-semibold uppercase tracking-[.2em] text-rose-600">Recommended Entry Mode</p>
-      <h2 class="text-3xl md:text-4xl font-bold">A phased strategy, not a risky store launch</h2>
-      <p class="mt-4 text-slate-600 leading-7">Kay Beauty should prove demand first, then scale through retail partnerships.</p>
-    </div>
-
-    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-5">
-      <div class="rounded-2xl bg-white p-5 shadow-sm border border-rose-100"><h3 class="text-xl font-bold">Phase 1: Digital-first</h3><p class="mt-3 text-sm leading-6 text-slate-600">Launch through Canadian e-commerce, BC creator campaigns, shade-matching content, and limited hero products.</p></div>
-      <div class="rounded-2xl bg-white p-5 shadow-sm border border-rose-100"><h3 class="text-xl font-bold">Phase 2: Local partner</h3><p class="mt-3 text-sm leading-6 text-slate-600">Use a Canadian distributor/import partner for compliance, warehousing, customs, returns, and retailer readiness.</p></div>
-      <div class="rounded-2xl bg-white p-5 shadow-sm border border-rose-100"><h3 class="text-xl font-bold">Phase 3: Selective retail</h3><p class="mt-3 text-sm leading-6 text-slate-600">Approach Sephora Canada, Shoppers Beauty, or local retailers only after online demand and reviews are proven.</p></div>
-    </div>
-
-    <div class="max-w-5xl mx-auto mt-10 rounded-3xl bg-slate-950 p-8 text-white shadow-xl">
-      <p class="text-sm font-semibold uppercase tracking-[.2em] text-rose-300">Strategic Logic</p>
-      <h3 class="mt-3 text-2xl font-bold">Ownership + Location + Internalization</h3>
-      <div class="mt-6 grid md:grid-cols-3 gap-4">
-        <div class="rounded-2xl bg-white/10 p-5"><p class="font-bold">Ownership advantage</p><p class="mt-2 text-sm text-slate-300">Katrina Kaif brand equity, Nykaa beauty expertise, inclusive shade positioning, and performance makeup identity.</p></div>
-        <div class="rounded-2xl bg-white/10 p-5"><p class="font-bold">Location advantage</p><p class="mt-2 text-sm text-slate-300">Canada’s multicultural market and BC’s South Asian community create a focused launch opportunity.</p></div>
-        <div class="rounded-2xl bg-white/10 p-5"><p class="font-bold">Internalization advantage</p><p class="mt-2 text-sm text-slate-300">Kay should control brand message and product quality while outsourcing compliance/logistics at first.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="timeline" class="bg-white px-4 py-16 md:py-20">
-    <div class="max-w-3xl mx-auto text-center mb-8">
-      <p class="mb-2 text-sm font-semibold uppercase tracking-[.2em] text-rose-600">Action Plan</p>
-      <h2 class="text-3xl md:text-4xl font-bold">Implementation Timeline</h2>
-      <p class="mt-4 text-slate-600 leading-7">This shows the recommendation is practical, not just theoretical.</p>
-    </div>
-
-    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-5">
-      <div class="rounded-2xl bg-white p-5 shadow-sm border"><p class="text-sm font-semibold text-rose-600">0–3 months</p><h3 class="mt-2 text-xl font-bold">Prepare for entry</h3><ul class="mt-4 space-y-2 text-sm text-slate-600"><li>✓ Confirm hero products</li><li>✓ Review Health Canada rules</li><li>✓ Set Canadian pricing</li><li>✓ Find importer/distributor</li><li>✓ Build BC influencer list</li></ul></div>
-      <div class="rounded-2xl bg-white p-5 shadow-sm border"><p class="text-sm font-semibold text-rose-600">3–6 months</p><h3 class="mt-2 text-xl font-bold">Soft launch in BC</h3><ul class="mt-4 space-y-2 text-sm text-slate-600"><li>✓ Launch Canadian e-commerce</li><li>✓ Run creator campaigns</li><li>✓ Host Surrey/Vancouver pop-up</li><li>✓ Collect reviews</li><li>✓ Measure repeat purchase</li></ul></div>
-      <div class="rounded-2xl bg-white p-5 shadow-sm border"><p class="text-sm font-semibold text-rose-600">6–12 months</p><h3 class="mt-2 text-xl font-bold">Retail testing</h3><ul class="mt-4 space-y-2 text-sm text-slate-600"><li>✓ Pitch Sephora/Shoppers</li><li>✓ Test limited product range</li><li>✓ Use representation-focused PR</li><li>✓ Expand online into Ontario</li></ul></div>
-      <div class="rounded-2xl bg-white p-5 shadow-sm border"><p class="text-sm font-semibold text-rose-600">12–24 months</p><h3 class="mt-2 text-xl font-bold">Scale Canada-wide</h3><ul class="mt-4 space-y-2 text-sm text-slate-600"><li>✓ Wider retail distribution</li><li>✓ Consider Canadian warehouse</li><li>✓ Canada-specific campaigns</li><li>✓ Expand product assortment</li></ul></div>
-    </div>
-  </section>
-
-  <section class="px-4 py-16 md:py-20">
-    <div class="max-w-5xl mx-auto rounded-3xl bg-gradient-to-br from-rose-600 to-fuchsia-700 p-8 md:p-12 text-white shadow-xl">
-      <p class="text-sm font-semibold uppercase tracking-[.2em] text-rose-100">Final Recommendation</p>
-      <h2 class="mt-3 text-3xl md:text-4xl font-black">Launch in Canada, but learn in BC first.</h2>
-      <p class="mt-5 text-lg leading-8 text-rose-50">
-        Kay Beauty should enter Canada through a phased, digital-first strategy using British Columbia as the first launch market. This approach captures Canada’s multicultural beauty opportunity while controlling regulatory, financial, and competitive risk.
+      <p class="max-w-5xl mx-auto mt-8 text-xs leading-6 text-slate-500">
+        Evidence: Vogue reported Kay Beauty’s launch year, Nykaa partnership, FY2025 GMV, customers served, UAE move, and UK launch through Space NK. Nykaa’s FY25 investor presentation identifies Kay Beauty as its flagship makeup brand and shows continued growth at scale.
       </p>
-    </div>
-  </section>
+    </section>
 
-  <section id="sources" class="bg-slate-950 px-4 py-16 md:py-20 text-white">
-    <div class="max-w-3xl mx-auto text-center mb-8">
-      <p class="mb-2 text-sm font-semibold uppercase tracking-[.2em] text-rose-300">Evidence Base</p>
-      <h2 class="text-3xl md:text-4xl font-bold">Sources to use in the final submission</h2>
-      <p class="mt-4 text-slate-300 leading-7">Use full APA/MLA citations in the final report or appendix.</p>
-    </div>
-    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-3">
-      <div class="rounded-2xl border border-white/10 bg-white/10 p-4 text-sm">Vogue Business — Kay Beauty global expansion, GMV, customers, UAE and UK launch</div>
-      <div class="rounded-2xl border border-white/10 bg-white/10 p-4 text-sm">Nykaa FY25 Investor Presentation — House of Nykaa Beauty performance and Kay Beauty growth positioning</div>
-      <div class="rounded-2xl border border-white/10 bg-white/10 p-4 text-sm">Health Canada — Cosmetic Notification Form and cosmetic labelling rules</div>
-      <div class="rounded-2xl border border-white/10 bg-white/10 p-4 text-sm">Statistics Canada — South Asian population in Canada, 2021 Census</div>
-      <div class="rounded-2xl border border-white/10 bg-white/10 p-4 text-sm">Mordor Intelligence — Canada cosmetics market size and growth estimates</div>
-      <div class="rounded-2xl border border-white/10 bg-white/10 p-4 text-sm">Kay Beauty official website — product positioning, product range, cruelty-free/paraben-free claims</div>
-    </div>
-  </section>
+    <section id="launch-market" class="px-4 py-16 md:py-20">
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <p class="text-sm font-semibold uppercase tracking-[.2em] text-rose-600">Launch Market</p>
+        <h2 class="mt-2 text-3xl md:text-4xl font-bold">Do not say “BC” generally — start with Surrey and Metro Vancouver</h2>
+        <p class="mt-4 text-slate-600 leading-7">
+          British Columbia is the province-level entry point, but the practical launch should begin in Surrey, supported by Vancouver, Burnaby, Richmond, and online channels.
+        </p>
+      </div>
+
+      <div class="max-w-7xl mx-auto grid lg:grid-cols-3 gap-5">
+        <div class="card p-6 border-rose-200 bg-rose-50">
+          <h3 class="text-2xl font-bold">Primary launch city: Surrey</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-700">
+            Surrey is the strongest first city because the City of Surrey profile shows South Asians represented 38% of Surrey’s population in 2021, compared with 14% in Metro Vancouver. India was also the top place of origin for recent immigrants to Surrey at 46%.
+          </p>
+          <p class="mt-3 text-sm leading-6 text-slate-700">
+            Business implication: Surrey gives Kay Beauty a concentrated community for launch events, creator partnerships, shade-matching content, and early word-of-mouth.
+          </p>
+        </div>
+
+        <div class="card p-6">
+          <h3 class="text-2xl font-bold">Support market: Metro Vancouver</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-600">
+            Metro Vancouver gives access to a wider multicultural consumer base and professional beauty retail environment. This prevents the brand from being positioned as “only for South Asian consumers.”
+          </p>
+          <p class="mt-3 text-sm leading-6 text-slate-600">
+            Business implication: use Vancouver, Burnaby, and Richmond for broader multicultural influencer content, PR, and retail conversations.
+          </p>
+        </div>
+
+        <div class="card p-6">
+          <h3 class="text-2xl font-bold">Retail testing nodes</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-600">
+            Sephora lists multiple British Columbia stores, including Surrey Guildford Town Centre and Surrey Grandview Corners. These are not immediate entry commitments; they are logical future retail-test locations after online demand is proven.
+          </p>
+          <p class="mt-3 text-sm leading-6 text-slate-600">
+            Business implication: retail should follow proof of demand, not come before it.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="analysis" class="bg-white px-4 py-16 md:py-20">
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <p class="text-sm font-semibold uppercase tracking-[.2em] text-rose-600">Course Frameworks Applied</p>
+        <h2 class="mt-2 text-3xl md:text-4xl font-bold">Analysis with business implications</h2>
+        <p class="mt-4 text-slate-600 leading-7">Every framework below supports the entry recommendation.</p>
+      </div>
+
+      <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-5">
+        <div class="card p-6">
+          <h3 class="text-2xl font-bold">PESTLE Analysis</h3>
+          <div class="mt-5 space-y-4 text-sm leading-6 text-slate-700">
+            <p><b>Political:</b> Canada is a stable, rules-based market. <b>Implication:</b> Canada is suitable for a controlled North American entry.</p>
+            <p><b>Economic:</b> Canada offers a sizeable cosmetics market, but consumers compare value closely. <b>Implication:</b> use affordable-premium pricing and avoid high fixed costs at launch.</p>
+            <p><b>Social:</b> South Asians are Canada’s largest racialized group, with over 2.57 million people in the 2021 Census. <b>Implication:</b> Kay Beauty can start with South Asian relevance and expand to multicultural inclusivity.</p>
+            <p><b>Technological:</b> Beauty discovery is strongly digital. <b>Implication:</b> launch through TikTok, Instagram, YouTube reviews, and shade-matching tools before physical retail.</p>
+            <p><b>Legal:</b> Health Canada requires manufacturers/importers to notify within 10 days after first sale, and cosmetic labels must meet Canadian requirements. <b>Implication:</b> appoint a Canadian importer/compliance partner before launch.</p>
+            <p><b>Environmental:</b> Beauty consumers question ingredients, packaging, and ethical claims. <b>Implication:</b> communicate only verified product claims and avoid vague “clean beauty” wording.</p>
+          </div>
+        </div>
+
+        <div class="card p-6">
+          <h3 class="text-2xl font-bold">Porter Five Forces</h3>
+          <div class="mt-5 space-y-4 text-sm leading-6 text-slate-700">
+            <p><b>Rivalry: High.</b> Canada already has Fenty Beauty, Rare Beauty, MAC, e.l.f., NYX, Maybelline, Huda Beauty, and Sephora Collection. <b>Action:</b> compete through South Asian shade expertise and performance-care positioning.</p>
+            <p><b>Buyer power: High.</b> Customers can switch brands easily. <b>Action:</b> use verified reviews, shade content, bundles, and trial-size offers.</p>
+            <p><b>Supplier/logistics power: Medium.</b> Importing from India creates shipping, inventory, currency, and compliance dependence. <b>Action:</b> use a Canadian distributor and hold limited inventory first.</p>
+            <p><b>Threat of entrants: Medium-high.</b> Beauty brands can enter online quickly. <b>Action:</b> build community and brand trust early.</p>
+            <p><b>Substitutes: High.</b> Consumers can choose drugstore, premium, skincare-only, or local brands. <b>Action:</b> focus on products where Kay has a clear reason to win: kajal, complexion, lip, and blush products for diverse undertones.</p>
+          </div>
+        </div>
+
+        <div class="card p-6">
+          <h3 class="text-2xl font-bold">OLI Framework</h3>
+          <div class="mt-5 space-y-4 text-sm leading-6 text-slate-700">
+            <p><b>Ownership advantage:</b> Katrina Kaif’s brand equity, Nykaa’s beauty retail expertise, Kay Beauty’s inclusive shade identity, and performance-plus-care positioning.</p>
+            <p><b>Location advantage:</b> Canada is multicultural; Surrey and Metro Vancouver offer a concentrated first market with retail and creator access.</p>
+            <p><b>Internalization advantage:</b> Kay Beauty should control brand, product quality, shade strategy, and storytelling, while outsourcing logistics and compliance initially.</p>
+          </div>
+        </div>
+
+        <div class="card p-6">
+          <h3 class="text-2xl font-bold">Stakeholder Priorities</h3>
+          <div class="overflow-x-auto mt-5">
+            <table class="w-full text-sm text-left">
+              <thead class="bg-slate-100">
+                <tr><th class="p-3">Stakeholder</th><th class="p-3">Concern</th><th class="p-3">Action</th></tr>
+              </thead>
+              <tbody>
+                <tr class="border-t"><td class="p-3">Kay Beauty / Nykaa</td><td class="p-3">Profitable expansion</td><td class="p-3">Use phased investment and KPIs</td></tr>
+                <tr class="border-t"><td class="p-3">Canadian consumers</td><td class="p-3">Trust, price, shade match</td><td class="p-3">Reviews, shade education, clear pricing</td></tr>
+                <tr class="border-t"><td class="p-3">South Asian community</td><td class="p-3">Authentic representation</td><td class="p-3">Local creators and community launch events</td></tr>
+                <tr class="border-t"><td class="p-3">Health Canada</td><td class="p-3">Safety and compliance</td><td class="p-3">Cosmetic notification and labelling review</td></tr>
+                <tr class="border-t"><td class="p-3">Retail partners</td><td class="p-3">Sales and shelf productivity</td><td class="p-3">Pitch only after online demand proof</td></tr>
+                <tr class="border-t"><td class="p-3">Influencers</td><td class="p-3">Authenticity</td><td class="p-3">Use BC beauty creators with real audience fit</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card p-6 lg:col-span-2">
+          <h3 class="text-2xl font-bold">Value Chain Decision</h3>
+          <div class="mt-5 grid md:grid-cols-5 gap-3 text-sm">
+            <div class="rounded-xl bg-slate-100 p-4"><b>Product development</b><br><span class="text-slate-600">Keep with India/Nykaa team</span></div>
+            <div class="rounded-xl bg-slate-100 p-4"><b>Manufacturing</b><br><span class="text-slate-600">Use existing supplier base first</span></div>
+            <div class="rounded-xl bg-slate-100 p-4"><b>Compliance/import</b><br><span class="text-slate-600">Local Canadian partner</span></div>
+            <div class="rounded-xl bg-slate-100 p-4"><b>Marketing</b><br><span class="text-slate-600">Localize in Surrey/Metro Vancouver</span></div>
+            <div class="rounded-xl bg-slate-100 p-4"><b>Retail</b><br><span class="text-slate-600">Selective after proof of demand</span></div>
+          </div>
+          <p class="mt-5 text-sm leading-6 text-slate-700">
+            Business implication: Kay Beauty should centralize what protects the brand and outsource what requires Canadian local knowledge. This reduces risk without losing control of the customer promise.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="entry" class="px-4 py-16 md:py-20">
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <p class="text-sm font-semibold uppercase tracking-[.2em] text-rose-600">Entry Mode and Structure</p>
+        <h2 class="mt-2 text-3xl md:text-4xl font-bold">A realistic entry model for a growing brand</h2>
+        <p class="mt-4 text-slate-600 leading-7">The structure follows the strategy: low fixed cost first, higher commitment only after results.</p>
+      </div>
+
+      <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-5">
+        <div class="card p-6">
+          <p class="text-sm font-semibold text-rose-600">Phase 1</p>
+          <h3 class="mt-2 text-xl font-bold">Digital-first launch</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-600">Launch a Canada landing page, limited hero products, creator reviews, shade-matching content, and Surrey/Metro Vancouver pop-ups.</p>
+        </div>
+        <div class="card p-6">
+          <p class="text-sm font-semibold text-rose-600">Phase 2</p>
+          <h3 class="mt-2 text-xl font-bold">Canadian operating partner</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-600">Use a Canadian distributor/importer to manage regulatory notification, labelling review, customs, inventory, and returns.</p>
+        </div>
+        <div class="card p-6">
+          <p class="text-sm font-semibold text-rose-600">Phase 3</p>
+          <h3 class="mt-2 text-xl font-bold">Selective retail expansion</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-600">Pitch Sephora Canada, Shoppers Beauty, or local beauty retailers after evidence from sales, reviews, repeat purchases, and creator performance.</p>
+        </div>
+      </div>
+
+      <div class="max-w-5xl mx-auto mt-10 rounded-3xl bg-slate-950 p-8 text-white">
+        <p class="text-sm font-semibold uppercase tracking-[.2em] text-rose-300">Recommended Structure</p>
+        <h3 class="mt-3 text-2xl font-bold">Lean Canada market-entry team + local partners</h3>
+        <p class="mt-4 text-slate-300 leading-7">
+          Kay Beauty should not create a full Canadian subsidiary immediately. A lean structure is more appropriate: India HQ controls product, brand, and pricing guardrails; one Canada launch lead manages the market; a Canadian partner handles compliance and logistics; and a local agency manages creator campaigns.
+        </p>
+      </div>
+    </section>
+
+    <section id="implementation" class="bg-white px-4 py-16 md:py-20">
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <p class="text-sm font-semibold uppercase tracking-[.2em] text-rose-600">Implementation Plan</p>
+        <h2 class="mt-2 text-3xl md:text-4xl font-bold">Specific actions and success measures</h2>
+        <p class="mt-4 text-slate-600 leading-7">This turns the recommendation into a business plan.</p>
+      </div>
+
+      <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-5">
+        <div class="card p-5">
+          <p class="text-sm font-semibold text-rose-600">0–3 months</p>
+          <h3 class="mt-2 text-xl font-bold">Prepare</h3>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>✓ Select hero SKUs</li>
+            <li>✓ Review ingredients and labels</li>
+            <li>✓ Set Canadian price bands</li>
+            <li>✓ Appoint importer/distributor</li>
+            <li>✓ Recruit BC creators</li>
+          </ul>
+        </div>
+
+        <div class="card p-5">
+          <p class="text-sm font-semibold text-rose-600">3–6 months</p>
+          <h3 class="mt-2 text-xl font-bold">Launch Surrey pilot</h3>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>✓ Canada e-commerce page</li>
+            <li>✓ Surrey creator campaign</li>
+            <li>✓ Shade-match content</li>
+            <li>✓ Pop-up in Surrey retail node</li>
+            <li>✓ Track reviews and repeat purchase</li>
+          </ul>
+        </div>
+
+        <div class="card p-5">
+          <p class="text-sm font-semibold text-rose-600">6–12 months</p>
+          <h3 class="mt-2 text-xl font-bold">Expand Metro Vancouver</h3>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>✓ Vancouver/Burnaby PR</li>
+            <li>✓ Retail buyer meetings</li>
+            <li>✓ Limited retail trial</li>
+            <li>✓ Improve stock planning</li>
+            <li>✓ Add customer service support</li>
+          </ul>
+        </div>
+
+        <div class="card p-5">
+          <p class="text-sm font-semibold text-rose-600">12–24 months</p>
+          <h3 class="mt-2 text-xl font-bold">Scale nationally</h3>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>✓ Move into Ontario/GTA</li>
+            <li>✓ Expand retail distribution</li>
+            <li>✓ Add Canada-specific campaigns</li>
+            <li>✓ Consider Canadian warehouse</li>
+            <li>✓ Add more product categories</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto mt-8 grid md:grid-cols-3 gap-5">
+        <div class="card p-5"><h3 class="text-xl font-bold">Success KPI 1: Demand</h3><p class="mt-2 text-sm leading-6 text-slate-600">Online conversion rate, repeat purchase, product reviews, waitlists, and sold-through hero products.</p></div>
+        <div class="card p-5"><h3 class="text-xl font-bold">Success KPI 2: Brand fit</h3><p class="mt-2 text-sm leading-6 text-slate-600">Creator engagement, shade-match feedback, community event response, and customer sentiment.</p></div>
+        <div class="card p-5"><h3 class="text-xl font-bold">Success KPI 3: Retail readiness</h3><p class="mt-2 text-sm leading-6 text-slate-600">Compliance completion, return rate, fulfilment time, gross margin after shipping/import costs, and retail buyer interest.</p></div>
+      </div>
+    </section>
+
+    <section class="px-4 py-16 md:py-20">
+      <div class="max-w-5xl mx-auto rounded-3xl bg-gradient-to-br from-rose-600 to-fuchsia-700 p-8 md:p-12 text-white shadow-xl">
+        <p class="text-sm font-semibold uppercase tracking-[.2em] text-rose-100">Final Recommendation</p>
+        <h2 class="mt-3 text-3xl md:text-4xl font-black">Launch in Canada, but learn in Surrey first.</h2>
+        <p class="mt-5 text-lg leading-8 text-rose-50">
+          Kay Beauty should enter Canada through a phased, digital-first strategy using Surrey and Metro Vancouver as the first test market. This gives Kay Beauty access to a concentrated South Asian and multicultural customer base, while controlling regulatory, financial, and competitive risk before national expansion.
+        </p>
+      </div>
+    </section>
+
+    <section id="references" class="bg-slate-950 px-4 py-16 md:py-20 text-white">
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <p class="text-sm font-semibold uppercase tracking-[.2em] text-rose-300">References and Evidence</p>
+        <h2 class="mt-2 text-3xl md:text-4xl font-bold">Sources used to support the strategy</h2>
+        <p class="mt-4 text-slate-300 leading-7">
+          These are the key sources behind the factual claims and recommendations.
+        </p>
+      </div>
+
+      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-4 text-sm leading-6">
+        <div class="rounded-2xl border border-white/10 bg-white/10 p-5">
+          <b>Vogue Business.</b> Kay Beauty launch year, Nykaa partnership, ₹240 crore GMV, 2.5M+ customers, UAE move, UK launch through Space NK, and international strategy.
+          <br><a class="source-link" href="https://www.vogue.com/article/can-katrina-kaif-take-her-kay-beauty-brand-global" target="_blank" rel="noopener">Open source</a>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/10 p-5">
+          <b>Nykaa FY25 Investor Presentation.</b> Kay Beauty as a flagship makeup brand with growth at scale, product launches, and House of Nykaa Beauty performance.
+          <br><a class="source-link" href="https://www.nykaa.com/media/wysiwyg/uiTools/2025-5/Investor-Presentation-Q4-and-FY25.pdf" target="_blank" rel="noopener">Open source</a>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/10 p-5">
+          <b>Statistics Canada.</b> South Asians in Canada: over 2.57 million people, 7.1% of Canada’s population, and largest racialized group in the 2021 Census.
+          <br><a class="source-link" href="https://www150.statcan.gc.ca/n1/pub/89-657-x/89-657-x2025007-eng.htm" target="_blank" rel="noopener">Open source</a>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/10 p-5">
+          <b>City of Surrey 2021 Census Profile.</b> Surrey demographics: South Asian population share and India as top place of origin for recent immigrants to Surrey.
+          <br><a class="source-link" href="https://www.surrey.ca/sites/default/files/media/documents/Neighbourhood-Profile-City-of-Surrey.pdf" target="_blank" rel="noopener">Open source</a>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/10 p-5">
+          <b>Health Canada.</b> Cosmetic Notification Form: manufacturers and importers must notify Health Canada within 10 days after first sale in Canada.
+          <br><a class="source-link" href="https://www.canada.ca/en/health-canada/services/consumer-product-safety/cosmetics/notification-cosmetics.html" target="_blank" rel="noopener">Open source</a>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/10 p-5">
+          <b>Health Canada Labelling Guide.</b> Industry guide for preparing cosmetic labels that comply with Canadian regulatory requirements.
+          <br><a class="source-link" href="https://www.canada.ca/en/health-canada/services/consumer-product-safety/reports-publications/industry-professionals/labelling-cosmetics.html" target="_blank" rel="noopener">Open source</a>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/10 p-5">
+          <b>Sephora Canada Store List.</b> British Columbia store locations, including Surrey Guildford Town Centre and Surrey Grandview Corners.
+          <br><a class="source-link" href="https://www.sephora.com/ca/en/happening/storelist" target="_blank" rel="noopener">Open source</a>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/10 p-5">
+          <b>Kay Beauty Official Website.</b> Product positioning: buildable, high-performance makeup infused with care; product range and cruelty-free messaging.
+          <br><a class="source-link" href="https://www.kaybeauty.com/" target="_blank" rel="noopener">Open source</a>
+        </div>
+      </div>
+
+      <p class="max-w-4xl mx-auto mt-8 text-center text-xs leading-6 text-slate-400">
+        AI-use note for academic transparency: AI tools were used to support structure, editing, and website formatting. Final analysis, source selection, and recommendations should be reviewed and approved by the student before submission.
+      </p>
+    </section>
+  </main>
 </body>
 </html>
