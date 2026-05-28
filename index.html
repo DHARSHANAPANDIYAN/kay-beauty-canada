@@ -25,14 +25,15 @@
     .stat-pill { display:inline-flex; align-items:center; gap:.4rem; border:1px solid #fecdd3; background:#fff1f2; color:#9f1239; border-radius:9999px; padding:.4rem .75rem; font-size:.8rem; font-weight:600; }
     .review-score { font-size: 2rem; font-weight: 900; line-height:1; color:#be123c; }
 
-  
-    .chart-shell { border: 1px solid #e2e8f0; background: #ffffff; border-radius: 1.5rem; box-shadow: 0 10px 30px rgba(15,23,42,.05); overflow: hidden; }
-    .chart-head { padding: 1.5rem 1.5rem 0.5rem 1.5rem; }
-    .chart-title { font-size: 1.15rem; font-weight: 700; color: #0f172a; }
+    .chart-shell { border: 1px solid #e2e8f0; background: #ffffff; border-radius: 1.5rem; box-shadow: 0 10px 30px rgba(15,23,42,.06); overflow: hidden; }
+    .chart-head { padding: 1.5rem 1.5rem 0.65rem 1.5rem; }
+    .chart-title { font-size: 1.12rem; font-weight: 800; color: #0f172a; }
     .chart-subtitle { margin-top: .45rem; font-size: .92rem; line-height: 1.6; color: #475569; }
-    .chart-takeaway { display:inline-block; margin-top:.85rem; padding:.38rem .7rem; border-radius:9999px; background:#f8fafc; border:1px solid #e2e8f0; color:#334155; font-size:.78rem; font-weight:600; }
+    .chart-takeaway { display:inline-block; margin-top:.85rem; padding:.38rem .7rem; border-radius:9999px; background:#f8fafc; border:1px solid #e2e8f0; color:#334155; font-size:.78rem; font-weight:700; }
     .chart-body { padding: .5rem 1.25rem 1.25rem 1.25rem; }
     .chart-foot { padding: 0 1.5rem 1.25rem 1.5rem; font-size: .75rem; line-height: 1.5; color: #64748b; }
+    .market-chart-wrap { height: 360px; min-height: 360px; }
+    @media (max-width: 1024px) { .market-chart-wrap { height: 320px; min-height: 320px; } }
 
   </style>
 </head>
@@ -48,10 +49,8 @@
         <a href="#visuals" class="text-slate-300 hover:text-white">Visuals</a>
         <a href="#fourps" class="text-slate-300 hover:text-white">4Ps</a>
         <a href="#analysis" class="text-slate-300 hover:text-white">Analysis</a>
-        <a href="#course-tools" class="text-slate-300 hover:text-white">Course Tools</a>
         <a href="#entry" class="text-slate-300 hover:text-white">Entry Mode</a>
         <a href="#implementation" class="text-slate-300 hover:text-white">Implementation</a>
-        <a href="#professor-tools" class="text-slate-300 hover:text-white">Professor Tools</a>
         <a href="#references" class="text-slate-300 hover:text-white">References</a>
       </div>
     </div>
@@ -61,7 +60,7 @@
     <div class="max-w-7xl mx-auto grid md:grid-cols-[1.05fr_.95fr] gap-10 items-center">
       <div>
         <div class="flex flex-wrap gap-2 mb-5">
-          <span class="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs">Final Strategy Proposal</span>
+          <span class="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs">International Expansion Strategy</span>
           <span class="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs">Home Country: India</span>
           <span class="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs">New Country: Canada</span>
         </div>
@@ -330,14 +329,12 @@
       </div>
     </section>
 
-
-    
     <section id="visuals" class="bg-white px-4 py-16 md:py-20">
       <div class="max-w-3xl mx-auto text-center mb-10">
         <p class="text-sm font-semibold uppercase tracking-[.2em] text-rose-600">Visual Insights</p>
-        <h2 class="mt-2 text-3xl md:text-4xl font-bold">Executive charts that support the decision</h2>
+        <h2 class="mt-2 text-3xl md:text-4xl font-bold">Executive charts supporting the Canada entry decision</h2>
         <p class="mt-4 text-slate-600 leading-7">
-          These visuals are designed to communicate a decision clearly. Each chart answers one question and shows the business implication directly.
+          Each visual answers one business question and connects the data directly to the market-entry recommendation.
         </p>
       </div>
 
@@ -346,31 +343,31 @@
           <div class="chart-head">
             <div class="chart-title">1) Why Surrey should be the first launch city</div>
             <p class="chart-subtitle">
-              A stronger concentration of South Asian consumers makes Surrey a better pilot market than treating British Columbia as one generic geography.
+              Surrey has a much stronger concentration of South Asian consumers than Canada overall, making it a focused pilot market for brand awareness and product feedback.
             </p>
-            <span class="chart-takeaway">Takeaway: Launch where relevance is highest first.</span>
+            <span class="chart-takeaway">Business implication: Launch where relevance is highest first.</span>
           </div>
           <div class="chart-body">
-            <canvas id="southAsianChart" height="240"></canvas>
+            <div style="height: 280px;"><canvas id="southAsianChart"></canvas></div>
           </div>
           <div class="chart-foot">
-            Source: Statistics Canada (Canada overall) and City of Surrey 2021 Census Profile (Metro Vancouver and Surrey).
+            Source: Statistics Canada and City of Surrey 2021 Census Profile.
           </div>
         </div>
 
         <div class="chart-shell">
           <div class="chart-head">
-            <div class="chart-title">2) Why Canada is the better-governed market for formal expansion</div>
+            <div class="chart-title">2) Why Canada is suitable for a formal expansion model</div>
             <p class="chart-subtitle">
-              Governance quality matters because Kay Beauty’s Canadian entry depends on formal compliance, transparent processes, and retail readiness.
+              Governance and compliance quality matter because Kay Beauty will need reliable importing, labelling, retail, and consumer-protection processes.
             </p>
-            <span class="chart-takeaway">Takeaway: Canada supports a structured, compliance-led launch.</span>
+            <span class="chart-takeaway">Business implication: Use a structured, compliance-led launch.</span>
           </div>
           <div class="chart-body">
-            <canvas id="cpiChart" height="240"></canvas>
+            <div style="height: 280px;"><canvas id="cpiChart"></canvas></div>
           </div>
           <div class="chart-foot">
-            Source: Transparency International Corruption Perceptions Index (latest values cited on the website).
+            Source: Transparency International Corruption Perceptions Index.
           </div>
         </div>
 
@@ -378,46 +375,51 @@
           <div class="chart-head">
             <div class="chart-title">3) Is the Canadian cosmetics market large enough to justify entry?</div>
             <p class="chart-subtitle">
-              The market is sizeable and growing, but not so easy that Kay Beauty should make a high-cost retail commitment immediately.
+              The market is sizeable and projected to grow, but Kay Beauty should still avoid a high-cost national retail launch until demand is proven.
             </p>
-            <span class="chart-takeaway">Takeaway: Enter Canada, but scale through a phased model.</span>
+            <span class="chart-takeaway">Business implication: Enter Canada, but scale through a phased model.</span>
           </div>
+
           <div class="chart-body">
-            <div class="grid lg:grid-cols-[1.2fr_.8fr] gap-6 items-center">
-              <div>
-                <canvas id="marketChart" height="150"></canvas>
+            <div class="grid lg:grid-cols-[minmax(0,1.25fr)_minmax(320px,.75fr)] gap-6 items-stretch">
+              <div class="market-chart-wrap">
+                <canvas id="marketChart"></canvas>
               </div>
-              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 flex flex-col justify-center">
                 <p class="text-sm font-semibold uppercase tracking-[.18em] text-slate-500">Executive read</p>
-                <div class="mt-4 grid grid-cols-2 gap-4">
+                <div class="mt-5 space-y-5">
                   <div>
                     <p class="text-xs text-slate-500">2025 Market Size</p>
-                    <p class="text-2xl font-black text-slate-900">USD 1.93B</p>
+                    <p class="text-3xl font-black text-slate-900">USD 1.93B</p>
                   </div>
                   <div>
                     <p class="text-xs text-slate-500">2031 Forecast</p>
-                    <p class="text-2xl font-black text-slate-900">USD 2.53B</p>
+                    <p class="text-3xl font-black text-slate-900">USD 2.53B</p>
                   </div>
-                  <div class="col-span-2 pt-2 border-t border-slate-200">
-                    <p class="text-xs text-slate-500">Approx. Growth</p>
-                    <p class="text-xl font-bold text-rose-700">~31% increase</p>
-                    <p class="mt-1 text-sm leading-6 text-slate-600">Large enough to justify entry, but best approached with a focused city-first launch and selective retail expansion.</p>
+                  <div class="pt-4 border-t border-slate-200">
+                    <p class="text-xs text-slate-500">Approximate Increase</p>
+                    <p class="text-2xl font-bold text-rose-700">~31%</p>
+                    <p class="mt-2 text-sm leading-6 text-slate-600">
+                      This supports entry, but the correct strategy is a focused pilot first, followed by selective retail expansion.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="chart-foot">
-            Source: Mordor Intelligence, Canada cosmetic products market estimates (USD 1.93B in 2025 to USD 2.53B in 2031).
+            Source: Canada cosmetics market estimates used in the analysis.
           </div>
         </div>
       </div>
     </section>
 
 
-    <section id="analysis" class="bg-white px-4 py-16 md:py-20">
+<section id="analysis" class="bg-white px-4 py-16 md:py-20">
       <div class="max-w-3xl mx-auto text-center mb-10">
-        <p class="text-sm font-semibold uppercase tracking-[.2em] text-rose-600">Course Frameworks Applied</p>
+        <p class="text-sm font-semibold uppercase tracking-[.2em] text-rose-600">Market Entry Assessment</p>
         <h2 class="mt-2 text-3xl md:text-4xl font-bold">Analysis with business implications</h2>
         <p class="mt-4 text-slate-600 leading-7">Every framework below supports the entry recommendation.</p>
       </div>
@@ -429,7 +431,7 @@
             <p><b>Political:</b> Canada is a stable, rules-based market. <b>Implication:</b> Canada is suitable for a controlled North American entry.</p>
             <p><b>Economic:</b> Canada offers a sizeable cosmetics market, but consumers compare value closely. <b>Implication:</b> use affordable-premium pricing and avoid high fixed costs at launch.</p>
             <p><b>Social:</b> South Asians are Canada’s largest racialized group, with over 2.57 million people in the 2021 Census. <b>Implication:</b> Kay Beauty can start with South Asian relevance and expand to multicultural inclusivity.</p>
-            <p><b>Technological:</b> Beauty discovery is strongly digital. <b>Implication:</b> launch through TikTok, Instagram, YouTube reviews, and shade-matching tools before physical retail.</p>
+            <p><b>Technological:</b> Beauty discovery is strongly digital. <b>Implication:</b> launch through TikTok, Instagram, YouTube reviews, and shade-matching analysis methods before physical retail.</p>
             <p><b>Legal:</b> Health Canada requires manufacturers/importers to notify within 10 days after first sale, and cosmetic labels must meet Canadian requirements. <b>Implication:</b> appoint a Canadian importer/compliance partner before launch.</p>
             <p><b>Environmental:</b> Beauty consumers question ingredients, packaging, and ethical claims. <b>Implication:</b> communicate only verified product claims and avoid vague “clean beauty” wording.</p>
           </div>
@@ -491,9 +493,9 @@
     </section>
 
 
-    <section id="course-tools" class="px-4 py-16 md:py-20">
+    <section id="strategy-details" class="px-4 py-16 md:py-20">
       <div class="max-w-3xl mx-auto text-center mb-10">
-        <p class="text-sm font-semibold uppercase tracking-[.2em] text-rose-600">Full Course Tool Coverage</p>
+        <p class="text-sm font-semibold uppercase tracking-[.2em] text-rose-600">Market Entry Assessment</p>
         <h2 class="mt-2 text-3xl md:text-4xl font-bold">Additional required methods applied</h2>
         <p class="mt-4 text-slate-600 leading-7">
           These sections make the website more complete against the final project checklist: culture, home-vs-new-country comparison, resources and capabilities, financial thinking, and functional entry details.
@@ -729,58 +731,7 @@
         </p>
       </div>
     </section>
-
-
-    <section id="professor-tools" class="bg-slate-100 px-4 py-16 md:py-20">
-      <div class="max-w-3xl mx-auto text-center mb-10">
-        <p class="text-sm font-semibold uppercase tracking-[.2em] text-rose-600">Professor-Recommended Tools Used</p>
-        <h2 class="mt-2 text-3xl md:text-4xl font-bold">Data and analysis sources from the course PPTs</h2>
-        <p class="mt-4 text-slate-600 leading-7">
-          The project uses the professor’s recommended approach: structured communication, credible data, cultural tools, corruption/compliance risk checks, and global trade context.
-        </p>
-      </div>
-
-      <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-5">
-        <div class="card p-6">
-          <h3 class="text-2xl font-bold">Structured communication tools</h3>
-          <div class="mt-5 space-y-3 text-sm leading-6 text-slate-700">
-            <p><b>SCQA:</b> used in the recommendation section to frame the situation, complication, question, and answer.</p>
-            <p><b>Pyramid Principle:</b> used by starting with the recommendation first, then supporting it with evidence and implementation details.</p>
-            <p><b>Hypothesis approach:</b> the working hypothesis is that Kay Beauty should enter Canada through a phased, Surrey-first digital launch, and each analysis section tests that recommendation.</p>
-            <p><b>Professional communication:</b> acronyms are explained, slang is avoided, and the website is built like a real market-entry proposal.</p>
-          </div>
-        </div>
-
-        <div class="card p-6">
-          <h3 class="text-2xl font-bold">Culture tools: Hofstede / Culture Factor</h3>
-          <div class="mt-5 space-y-3 text-sm leading-6 text-slate-700">
-            <p><b>Canada:</b> The Culture Factor shows Canada has lower power distance and high individualism. It describes Canadian workplaces as more consultative and evidence/merit-based.</p>
-            <p><b>India:</b> The Culture Factor identifies India as high on power distance, meaning hierarchy and top-down structure matter more in society and organizations.</p>
-            <p><b>Business implication:</b> in India, Katrina Kaif/Nykaa authority can strongly support trust; in Canada, Kay Beauty must also prove itself through product reviews, creator evidence, transparent claims, and customer experience.</p>
-          </div>
-        </div>
-
-        <div class="card p-6">
-          <h3 class="text-2xl font-bold">Corruption and governance: Transparency International</h3>
-          <div class="mt-5 space-y-3 text-sm leading-6 text-slate-700">
-            <p><b>Canada:</b> Transparency International lists Canada at 75/100 and rank 16/182 in the latest CPI data shown on its country page.</p>
-            <p><b>India:</b> Transparency International lists India at 39/100 and rank 91/182 in the latest CPI data shown on its country page.</p>
-            <p><b>Business implication:</b> the strategy should not copy Indian operating assumptions into Canada. Kay Beauty needs formal Canadian compliance, documented labelling, and transparent retail/import processes.</p>
-          </div>
-        </div>
-
-        <div class="card p-6">
-          <h3 class="text-2xl font-bold">Globalization data: Our World in Data</h3>
-          <div class="mt-5 space-y-3 text-sm leading-6 text-slate-700">
-            <p><b>Use in project:</b> Our World in Data is used as background support for why cross-border trade and global value chains matter in international strategy.</p>
-            <p><b>Business implication:</b> Kay Beauty can use an international value chain, but it must manage shipping, compliance, landed cost, and inventory risk instead of assuming global expansion is frictionless.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="references" class="bg-slate-950 px-4 py-16 md:py-20 text-white">
+<section id="references" class="bg-slate-950 px-4 py-16 md:py-20 text-white">
       <div class="max-w-3xl mx-auto text-center mb-10">
         <p class="text-sm font-semibold uppercase tracking-[.2em] text-rose-300">References and Evidence</p>
         <h2 class="mt-2 text-3xl md:text-4xl font-bold">Sources used to support the strategy</h2>
@@ -797,7 +748,7 @@
 
         <div class="rounded-2xl border border-white/10 bg-white/10 p-5">
           <b>Nykaa FY25 Investor Presentation.</b> Kay Beauty as a flagship makeup brand with growth at scale, product launches, and House of Nykaa Beauty performance.
-          <br><a class="source-link" href="https://www.nykaa.com/media/wysiwyg/uiTools/2025-5/Investor-Presentation-Q4-and-FY25.pdf" target="_blank" rel="noopener">Open source</a>
+          <br><a class="source-link" href="https://www.nykaa.com/media/wysiwyg/uiAnalysis Methods/2025-5/Investor-Presentation-Q4-and-FY25.pdf" target="_blank" rel="noopener">Open source</a>
         </div>
 
         <div class="rounded-2xl border border-white/10 bg-white/10 p-5">
@@ -846,65 +797,52 @@
         </div>
 
         <div class="rounded-2xl border border-white/10 bg-white/10 p-5">
-          <b>Pyramid Principle resource from course PPT.</b> Used to structure the website by starting with the answer and grouping supporting arguments.
+          <b>Pyramid Principle resource from strategy PPT.</b> Used to structure the website by starting with the answer and grouping supporting arguments.
           <br><a class="source-link" href="https://www.myconsultingoffer.org/case-study-interview-prep/pyramid-principle/" target="_blank" rel="noopener">Open source</a>
         </div>
 
       </div>
 
       <p class="max-w-4xl mx-auto mt-8 text-center text-xs leading-6 text-slate-400">
-        AI-use note for academic transparency: AI tools were used to support structure, editing, and website formatting. Final analysis, source selection, and recommendations should be reviewed and approved by the student before submission.
+        AI-use note for academic transparency: AI analysis methods were used to support structure, editing, and website formatting. Final analysis, source selection, and recommendations should be reviewed and approved by the student before submission.
       </p>
     </section>
   </main>
 
-  
   <script>
     const brandRed = '#be123c';
-    const brandPink = '#e11d48';
     const mutedRose = '#fb7185';
     const softGray = '#cbd5e1';
     const gridColor = '#e5e7eb';
     const textColor = '#334155';
 
-    const numberLabelPlugin = {
-      id: 'numberLabelPlugin',
-      afterDatasetsDraw(chart, args, pluginOptions) {
+    const valueLabelPlugin = {
+      id: 'valueLabelPlugin',
+      afterDatasetsDraw(chart) {
         const { ctx } = chart;
+        if (chart.config.type !== 'bar') return;
+
         ctx.save();
-        ctx.font = '600 12px Inter, system-ui, sans-serif';
+        ctx.font = '700 12px Inter, system-ui, sans-serif';
         ctx.fillStyle = '#334155';
 
         chart.data.datasets.forEach((dataset, datasetIndex) => {
           const meta = chart.getDatasetMeta(datasetIndex);
           meta.data.forEach((element, index) => {
             const value = dataset.data[index];
-            const position = element.tooltipPosition();
-
-            if (chart.config.type === 'bar' && chart.options.indexAxis === 'y') {
-              ctx.textAlign = 'left';
-              ctx.textBaseline = 'middle';
-              const suffix = dataset.labelSuffix || '';
-              ctx.fillText(value + suffix, position.x + 10, position.y);
-            } else if (chart.config.type === 'bar') {
-              ctx.textAlign = 'center';
-              ctx.textBaseline = 'bottom';
-              const suffix = dataset.labelSuffix || '';
-              ctx.fillText(value + suffix, position.x, position.y - 8);
-            } else if (chart.config.type === 'line') {
-              ctx.textAlign = 'center';
-              ctx.textBaseline = 'bottom';
-              const prefix = dataset.labelPrefix || '';
-              const suffix = dataset.labelSuffix || '';
-              ctx.fillText(prefix + value + suffix, position.x, position.y - 10);
-            }
+            const pos = element.tooltipPosition();
+            const suffix = dataset.labelSuffix || '';
+            ctx.textAlign = 'left';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(value + suffix, pos.x + 10, pos.y);
           });
         });
+
         ctx.restore();
       }
     };
 
-    Chart.register(numberLabelPlugin);
+    Chart.register(valueLabelPlugin);
 
     const axisDefaults = {
       ticks: {
@@ -933,27 +871,19 @@
         indexAxis: 'y',
         responsive: true,
         maintainAspectRatio: false,
-        layout: { padding: { right: 35 } },
+        layout: { padding: { right: 44 } },
         plugins: {
           legend: { display: false },
-          tooltip: {
-            callbacks: { label: (ctx) => `${ctx.raw}% of population` }
-          }
+          tooltip: { callbacks: { label: (ctx) => `${ctx.raw}% of population` } }
         },
         scales: {
           x: {
             ...axisDefaults,
             min: 0,
-            max: 40,
-            ticks: {
-              ...axisDefaults.ticks,
-              callback: (v) => v + '%'
-            }
+            max: 42,
+            ticks: { ...axisDefaults.ticks, callback: (v) => v + '%' }
           },
-          y: {
-            ...axisDefaults,
-            grid: { display: false }
-          }
+          y: { ...axisDefaults, grid: { display: false } }
         }
       }
     });
@@ -974,23 +904,14 @@
         indexAxis: 'y',
         responsive: true,
         maintainAspectRatio: false,
-        layout: { padding: { right: 40 } },
+        layout: { padding: { right: 52 } },
         plugins: {
           legend: { display: false },
-          tooltip: {
-            callbacks: { label: (ctx) => `${ctx.raw}/100 CPI score` }
-          }
+          tooltip: { callbacks: { label: (ctx) => `${ctx.raw}/100 CPI score` } }
         },
         scales: {
-          x: {
-            ...axisDefaults,
-            min: 0,
-            max: 100
-          },
-          y: {
-            ...axisDefaults,
-            grid: { display: false }
-          }
+          x: { ...axisDefaults, min: 0, max: 100 },
+          y: { ...axisDefaults, grid: { display: false } }
         }
       }
     });
@@ -1001,15 +922,13 @@
         labels: ['2025', '2031'],
         datasets: [{
           data: [1.93, 2.53],
-          labelPrefix: 'USD ',
-          labelSuffix: 'B',
           borderColor: brandRed,
           backgroundColor: 'rgba(190,18,60,0.08)',
           fill: true,
-          tension: 0.25,
+          tension: 0.22,
           borderWidth: 3,
-          pointRadius: 5,
-          pointHoverRadius: 5,
+          pointRadius: 6,
+          pointHoverRadius: 7,
           pointBackgroundColor: '#ffffff',
           pointBorderColor: brandRed,
           pointBorderWidth: 3
@@ -1018,24 +937,31 @@
       options: {
         responsive: true,
         maintainAspectRatio: false,
+        layout: { padding: { top: 20, right: 24, bottom: 10, left: 8 } },
         plugins: {
           legend: { display: false },
           tooltip: {
-            callbacks: { label: (ctx) => `USD ${ctx.raw.toFixed(2)}B` }
+            callbacks: { label: (ctx) => `Canada cosmetics market: USD ${ctx.raw.toFixed(2)}B` }
           }
         },
         scales: {
           x: {
             ...axisDefaults,
-            grid: { display: false }
+            offset: true,
+            grid: { display: false },
+            ticks: {
+              ...axisDefaults.ticks,
+              font: { family: 'Inter, system-ui, sans-serif', size: 13, weight: '600' }
+            }
           },
           y: {
             ...axisDefaults,
-            min: 1.5,
-            max: 2.8,
+            min: 1.7,
+            max: 2.7,
             ticks: {
               ...axisDefaults.ticks,
-              callback: (v) => 'USD ' + v + 'B'
+              stepSize: 0.2,
+              callback: (v) => '$' + Number(v).toFixed(1) + 'B'
             }
           }
         }
@@ -1043,6 +969,7 @@
     });
   </script>
 </body>
+
 
 
 </html>
